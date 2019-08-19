@@ -49,11 +49,10 @@ GROUP BY
   continent;
 ---------------- 8. ----------------
 SELECT
-  continent,
-  SUM(population)
+  continent
 FROM
   world
 GROUP BY
   continent
 HAVING
-  SUM(population) > 500000000;
+  SUM(population) > 100000000;
